@@ -1,0 +1,12 @@
+.time {
+    padding: 32px;
+    text-align: center;
+    position: relative;
+}
+
+.funcionarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 32px;
+}
