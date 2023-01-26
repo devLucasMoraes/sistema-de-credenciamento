@@ -1,0 +1,35 @@
+.menu {
+    display: flex;
+    background-color: #55646c;
+    justify-content: center;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__link {
+    list-style-type: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 0 2px;
+}
+
+.menu__link:hover{
+    background-color: #4d5a61;
+}
+
+.menu__link--ativo{
+    list-style-type: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 0 2px;
+    background-color: #4d5a61;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}

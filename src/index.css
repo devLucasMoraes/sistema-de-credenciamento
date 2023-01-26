@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
 body {
   background-color: #f9fafa;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Arimo', sans-serif;
 }
 
