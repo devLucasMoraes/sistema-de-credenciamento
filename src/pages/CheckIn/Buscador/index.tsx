@@ -1,4 +1,5 @@
 import React from "react"
+import './Buscador.css'
 
 interface BuscadorProps {
     busca: string,
@@ -8,7 +9,7 @@ interface BuscadorProps {
 
 export default function Buscador({ busca, setBusca }: BuscadorProps) {
     return (
-        <div>
+        <div className="buscador">
             <input type="text" placeholder="Buscar" value={busca} onChange={e => setBusca(e.target.value)} />
         </div>
     )

@@ -10,8 +10,8 @@ export default function CheckIn() {
 
     return (
         <>
+            <Buscador busca={busca} setBusca={setBusca} />
             <section className='checkin' >
-                <Buscador busca={busca} setBusca={setBusca} />
                 <Cards />
             </section>
         </>
