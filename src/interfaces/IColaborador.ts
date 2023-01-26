@@ -1,4 +1,4 @@
-export default interface IFuncionaro {
+export default interface IColaborador {
     id: string,
     nome: string,
     cargo: string

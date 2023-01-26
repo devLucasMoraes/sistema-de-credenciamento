@@ -1,37 +1,19 @@
-import Card from '../../components/Card/Index'
+import Buscador from './Buscador'
+import { useState } from 'react'
 import './CheckIn.css'
+import Cards from './Cards'
 
-const funcionarios = [
-    {
-        id: '1',
-        nome: 'Alex de Oliveira Santos',
-        cargo: 'Coordenador de Enfermagem'
-    },
-    {
-        id: '2',
-        nome: 'Alex de Oliveira Santos',
-        cargo: 'Coordenador de Enfermagem'
-    },
-    {
-        id: '3',
-        nome: 'Alex de Oliveira Santos',
-        cargo: 'Coordenador de Enfermagem'
-    },
-    {
-        id: '4',
-        nome: 'Alex de Oliveira Santos',
-        cargo: 'Coordenador de Enfermagem'
-    }
-]
+
 
 export default function CheckIn() {
+    const [busca, setBusca] = useState('')
+
     return (
-        <section className='time' >
-            <div className='funcionarios'>
-                {funcionarios.map(funcionario => (
-                    <Card key={funcionario.id} funcionario={funcionario} />
-                ))}
-            </div>
-        </section>
+        <>
+            <section className='checkin' >
+                <Buscador busca={busca} setBusca={setBusca} />
+                <Cards />
+            </section>
+        </>
     )
 }
